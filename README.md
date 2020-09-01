@@ -1,6 +1,6 @@
 # [bamboo](https://gitlab.cern.ch/cp3-cms/bamboo) examples based on [RDataFrame tutorials](https://root.cern/doc/master/group__tutorial__dataframe.html) with open data
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://github.com/pieterdavid/bamboo-dockerhub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fpieterdavid%2Fbamboo-opendata-examples.git&urlpath=lab%2Ftree%2Fbamboo-opendata-examples%2Fhiggs4l_tutorial_CMSOpenData.py&branch=master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pieterdavid/bamboo-docker/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fpieterdavid%252Fbamboo-opendata-examples%26urlpath%3Dlab%252Ftree%252Fbamboo-opendata-examples%252Fhiggs4l_tutorial_CMSOpenData.py%26branch%3Dmaster)
 
 These can be run directly on [Binder](https://mybinder.readthedocs.io/en/latest/) through the badge above, or installed locally (see the [documentation](https://cp3.irmp.ucl.ac.be/~pdavid/bamboo/install.html) for more details).
 
