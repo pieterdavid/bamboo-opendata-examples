@@ -1,0 +1,79 @@
+tree: Events
+eras:
+  '2012':
+    luminosity: 11580.0
+samples:
+  DoubleMuParked_2012:
+    era: "2012"
+    group: "data"
+    files:
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/Run2012B_DoubleMuParked.root
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/Run2012C_DoubleMuParked.root
+  DoubleElectron_2012:
+    era: "2012"
+    group: "data"
+    files:
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/Run2012B_DoubleElectron.root
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/Run2012C_DoubleElectron.root
+  SMHiggsToZZTo4l_2012:
+    era: "2012"
+    cross-section: 0.0065
+    generated-events: 299973.0
+    files:
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/SMHiggsToZZTo4L.root
+    legend: "m_{H} = 125 GeV"
+    fill-type: 0
+    #fill-color: "#ff0000"
+    line-color: "#ff0000"
+    line-width: 2
+    order: 2
+  ZZTo4mu_2012:
+    era: "2012"
+    group: ZZ
+    cross-section: 0.077
+    generated-events: 1499064.0
+    scale: 1.386
+    files:
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/ZZTo4mu.root
+  ZZTo4e_2012:
+    era: "2012"
+    group: ZZ
+    cross-section: 0.077
+    generated-events: 1499093.0
+    scale: 1.386
+    files:
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/ZZTo4e.root
+  ZZTo2e2mu_2012:
+    era: "2012"
+    group: ZZ
+    cross-section: 0.18
+    generated-events: 1497445.0
+    scale: 1.386
+    files:
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/ZZTo2e2mu.root
+plotIt:
+  configuration:
+    width: 800
+    height: 600
+    luminosity-label: '%1$.2f fb^{-1} (8 TeV)'
+    experiment: CMS Open Data
+    extra-label: bamboo example
+    error-fill-style: 3154
+    error-fill-color: "#ee556270"
+    ratio-fit-error-fill-style: 1001
+    ratio-fit-error-fill-color: "#aa556270"
+    ratio-fit-line-color: "#0B486B"
+  legend:
+    position: [0.7, 0.6, 0.91, 0.91]
+  groups:
+    ZZ:
+      legend: ZZ
+      fill-color: "#99ccff"
+      order: 1
+  plotdefaults:
+    y-axis: Events
+    log-y: both
+    y-axis-show-zero: True
+    save-extensions: [pdf, png]
+    show-ratio: False
+    sort-by-yields: False

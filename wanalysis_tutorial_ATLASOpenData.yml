@@ -1,0 +1,493 @@
+tree: mini
+eras:
+  '2016':
+    luminosity: 10064.0
+samples:
+  data_A_2016:
+    era: "2016"
+    group: "data"
+    files: 
+      - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/Data/data_A.1lep.root
+  data_B_2016:
+    era: "2016"
+    group: "data"
+    files: 
+      - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/Data/data_B.1lep.root
+  data_C_2016:
+    era: "2016"
+    group: "data"
+    files: 
+      - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/Data/data_C.1lep.root
+  data_D_2016:
+    era: "2016"
+    group: "data"
+    files: 
+      - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/Data/data_D.1lep.root
+  ## MC
+  Wmunu_PTV0_70_CVetoBVeto:
+    cross-section: 15317.171239
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364156.Wmunu_PTV0_70_CVetoBVeto.1lep.root
+    generated-events: 16619290.3298
+  Wmunu_PTV0_70_CFilterBVeto:
+    cross-section: 2431.204019
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364157.Wmunu_PTV0_70_CFilterBVeto.1lep.root
+    generated-events: 5643599.11526
+  Wmunu_PTV0_70_BFilter:
+    cross-section: 828.465384
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364158.Wmunu_PTV0_70_BFilter.1lep.root
+    generated-events: 10403012.6599
+  Wmunu_PTV70_140_CVetoBVeto:
+    cross-section: 617.439593
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364159.Wmunu_PTV70_140_CVetoBVeto.1lep.root
+    generated-events: 5418398.88082
+  Wmunu_PTV70_140_CFilterBVeto:
+    cross-section: 225.006704
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364160.Wmunu_PTV70_140_CFilterBVeto.1lep.root
+    generated-events: 3693885.78953
+  Wmunu_PTV70_140_BFilter:
+    cross-section: 76.213179
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364161.Wmunu_PTV70_140_BFilter.1lep.root
+    generated-events: 7990084.35926
+  Wmunu_PTV140_280_CVetoBVeto:
+    cross-section: 198.635592
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364162.Wmunu_PTV140_280_CVetoBVeto.1lep.root
+    generated-events: 6155495.28527
+  Wmunu_PTV140_280_CFilterBVeto:
+    cross-section: 96.233222
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364163.Wmunu_PTV140_280_CFilterBVeto.1lep.root
+    generated-events: 5260811.17463
+  Wmunu_PTV140_280_BFilter:
+    cross-section: 36.348467
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364164.Wmunu_PTV140_280_BFilter.1lep.root
+    generated-events: 7271557.26566
+  Wmunu_PTV280_500_CVetoBVeto:
+    cross-section: 38.299835
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364165.Wmunu_PTV280_500_CVetoBVeto.1lep.root
+    generated-events: 4325283.67358
+  Wmunu_PTV280_500_CFilterBVeto:
+    cross-section: 22.395647
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364166.Wmunu_PTV280_500_CFilterBVeto.1lep.root
+    generated-events: 2783968.68238
+  Wmunu_PTV280_500_BFilter:
+    cross-section: 8.768196
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364167.Wmunu_PTV280_500_BFilter.1lep.root
+    generated-events: 2835707.22044
+  Wmunu_PTV500_1000:
+    cross-section: 14.558821
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364168.Wmunu_PTV500_1000.1lep.root
+    generated-events: 5941704.99235
+  Wmunu_PTV1000_E_CMS:
+    cross-section: 1.198003
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364169.Wmunu_PTV1000_E_CMS.1lep.root
+    generated-events: 4068015.22447
+  Wenu_PTV0_70_CVetoBVeto:
+    cross-section: 15324.216356
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364170.Wenu_PTV0_70_CVetoBVeto.1lep.root
+    generated-events: 16615214.8608
+  Wenu_PTV0_70_CFilterBVeto:
+    cross-section: 2430.656322
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364171.Wenu_PTV0_70_CFilterBVeto.1lep.root
+    generated-events: 5647044.71225
+  Wenu_PTV0_70_BFilter:
+    cross-section: 832.203758
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364172.Wenu_PTV0_70_BFilter.1lep.root
+    generated-events: 10407897.8772
+  Wenu_PTV70_140_CVetoBVeto:
+    cross-section: 618.6882
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364173.Wenu_PTV70_140_CVetoBVeto.1lep.root
+    generated-events: 5098540.19503
+  Wenu_PTV70_140_CFilterBVeto:
+    cross-section: 223.63946
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364174.Wenu_PTV70_140_CFilterBVeto.1lep.root
+    generated-events: 3661915.17878
+  Wenu_PTV70_140_BFilter:
+    cross-section: 94.875534
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364175.Wenu_PTV70_140_BFilter.1lep.root
+    generated-events: 3980401.78673
+  Wenu_PTV140_280_CVetoBVeto:
+    cross-section: 197.343129
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364176.Wenu_PTV140_280_CVetoBVeto.1lep.root
+    generated-events: 6121546.03361
+  Wenu_PTV140_280_CFilterBVeto:
+    cross-section: 96.277568
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364177.Wenu_PTV140_280_CFilterBVeto.1lep.root
+    generated-events: 5263243.42582
+  Wenu_PTV140_280_BFilter:
+    cross-section: 35.917295
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364178.Wenu_PTV140_280_BFilter.1lep.root
+    generated-events: 7327201.08884
+  Wenu_PTV280_500_CVetoBVeto:
+    cross-section: 38.340533
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364179.Wenu_PTV280_500_CVetoBVeto.1lep.root
+    generated-events: 4312357.01458
+  Wenu_PTV280_500_CFilterBVeto:
+    cross-section: 22.36999
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364180.Wenu_PTV280_500_CFilterBVeto.1lep.root
+    generated-events: 2778654.28759
+  Wenu_PTV280_500_BFilter:
+    cross-section: 9.586345
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364181.Wenu_PTV280_500_BFilter.1lep.root
+    generated-events: 2835314.68179
+  Wenu_PTV500_1000:
+    cross-section: 14.598599
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364182.Wenu_PTV500_1000.1lep.root
+    generated-events: 6003269.52809
+  Wenu_PTV1000_E_CMS:
+    cross-section: 1.197518
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364183.Wenu_PTV1000_E_CMS.1lep.root
+    generated-events: 4075236.23897
+  Wtaunu_PTV0_70_CVetoBVeto:
+    cross-section: 15324.887336
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364184.Wtaunu_PTV0_70_CVetoBVeto.1lep.root
+    generated-events: 11929044.1188
+  Wtaunu_PTV0_70_CFilterBVeto:
+    cross-section: 2443.425881
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364185.Wtaunu_PTV0_70_CFilterBVeto.1lep.root
+    generated-events: 5671521.55269
+  Wtaunu_PTV0_70_BFilter:
+    cross-section: 837.531038
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364186.Wtaunu_PTV0_70_BFilter.1lep.root
+    generated-events: 10498770.1084
+  Wtaunu_PTV70_140_CVetoBVeto:
+    cross-section: 620.166885
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364187.Wtaunu_PTV70_140_CVetoBVeto.1lep.root
+    generated-events: 5427023.47527
+  Wtaunu_PTV70_140_CFilterBVeto:
+    cross-section: 222.595303
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364188.Wtaunu_PTV70_140_CFilterBVeto.1lep.root
+    generated-events: 3719117.16117
+  Wtaunu_PTV70_140_BFilter:
+    cross-section: 95.365521
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364189.Wtaunu_PTV70_140_BFilter.1lep.root
+    generated-events: 3969118.20687
+  Wtaunu_PTV140_280_CVetoBVeto:
+    cross-section: 197.370776
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364190.Wtaunu_PTV140_280_CVetoBVeto.1lep.root
+    generated-events: 6166514.76606
+  Wtaunu_PTV140_280_CFilterBVeto:
+    cross-section: 93.808553
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364191.Wtaunu_PTV140_280_CFilterBVeto.1lep.root
+    generated-events: 5085280.31607
+  Wtaunu_PTV140_280_BFilter:
+    cross-section: 34.639523
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364192.Wtaunu_PTV140_280_BFilter.1lep.root
+    generated-events: 7291603.73991
+  Wtaunu_PTV280_500_CVetoBVeto:
+    cross-section: 38.34009
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364193.Wtaunu_PTV280_500_CVetoBVeto.1lep.root
+    generated-events: 4322848.66983
+  Wtaunu_PTV280_500_CFilterBVeto:
+    cross-section: 22.268425
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364194.Wtaunu_PTV280_500_CFilterBVeto.1lep.root
+    generated-events: 2772305.06916
+  Wtaunu_PTV280_500_BFilter:
+    cross-section: 9.490847
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364195.Wtaunu_PTV280_500_BFilter.1lep.root
+    generated-events: 2830341.62344
+  Wtaunu_PTV500_1000:
+    cross-section: 14.60345
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364196.Wtaunu_PTV500_1000.1lep.root
+    generated-events: 5932750.60186
+  Wtaunu_PTV1000_E_CMS:
+    cross-section: 1.197324
+    era: '2016'
+    group: wjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_364197.Wtaunu_PTV1000_E_CMS.1lep.root
+    generated-events: 4057477.95297
+  ZqqZll:
+    cross-section: 2.20355112
+    era: '2016'
+    group: diboson
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_363356.ZqqZll.1lep.root
+    generated-events: 3439266.11559
+  WqqZll:
+    cross-section: 3.4328
+    era: '2016'
+    group: diboson
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_363358.WqqZll.1lep.root
+    generated-events: 241438.72705
+  WpqqWmlv:
+    cross-section: 24.708
+    era: '2016'
+    group: diboson
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_363359.WpqqWmlv.1lep.root
+    generated-events: 998250.783475
+  WplvWmqq:
+    cross-section: 24.724
+    era: '2016'
+    group: diboson
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_363360.WplvWmqq.1lep.root
+    generated-events: 1069526.41899
+  WlvZqq:
+    cross-section: 11.42
+    era: '2016'
+    group: diboson
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_363489.WlvZqq.1lep.root
+    generated-events: 1111991.15979
+  llll:
+    cross-section: 1.2578
+    era: '2016'
+    group: diboson
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_363490.llll.1lep.root
+    generated-events: 7538705.8077
+  lllv:
+    cross-section: 4.6049
+    era: '2016'
+    group: diboson
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_363491.lllv.1lep.root
+    generated-events: 5441475.00407
+  llvv:
+    cross-section: 12.466
+    era: '2016'
+    group: diboson
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_363492.llvv.1lep.root
+    generated-events: 5039259.9696
+  lvvv:
+    cross-section: 3.2286
+    era: '2016'
+    group: diboson
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_363493.lvvv.1lep.root
+    generated-events: 1727991.07441
+  Zee:
+    cross-section: 1950.5295
+    era: '2016'
+    group: zjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_361106.Zee.1lep.root
+    generated-events: 150277594200
+  Zmumu:
+    cross-section: 1950.6321
+    era: '2016'
+    group: zjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_361107.Zmumu.1lep.root
+    generated-events: 147334691090
+  Ztautau:
+    cross-section: 1950.6321
+    era: '2016'
+    group: zjets
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_361108.Ztautau.1lep.root
+    generated-events: 56171652547.3
+  single_top_tchan:
+    cross-section: 44.152
+    era: '2016'
+    group: singletop
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_410011.single_top_tchan.1lep.root
+    generated-events: 4986200
+  single_antitop_tchan:
+    cross-section: 26.276
+    era: '2016'
+    group: singletop
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_410012.single_antitop_tchan.1lep.root
+    generated-events: 4989800
+  single_top_schan:
+    cross-section: 2.06121
+    era: '2016'
+    group: singletop
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_410025.single_top_schan.1lep.root
+    generated-events: 997800
+  single_antitop_schan:
+    cross-section: 1.288662
+    era: '2016'
+    group: singletop
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_410026.single_antitop_schan.1lep.root
+    generated-events: 995400
+  single_top_wtchan:
+    cross-section: 35.845486
+    era: '2016'
+    group: singletop
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_410013.single_top_wtchan.1lep.root
+    generated-events: 4865800
+  single_antitop_wtchan:
+    cross-section: 35.824406
+    era: '2016'
+    group: singletop
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_410014.single_antitop_wtchan.1lep.root
+    generated-events: 4945600
+  ttbar_lep:
+    cross-section: 452.693559
+    era: '2016'
+    legend: "t#bar{t}"
+    fill-color: "#9b98cc"
+    order: 3
+    files:
+    - root://eospublic.cern.ch//eos/opendata/atlas/OutreachDatasets/2020-01-22/1lep/MC/mc_410000.ttbar_lep.1lep.root
+    generated-events: 49296600
+plotIt:
+  configuration:
+    width: 800
+    height: 600
+    luminosity-label: '%1$.2f fb^{-1} (13 TeV)'
+    experiment: ATLAS Open Data
+    extra-label: bamboo example
+    error-fill-style: 3154
+    error-fill-color: "#ee556270"
+    ratio-fit-error-fill-style: 1001
+    ratio-fit-error-fill-color: "#aa556270"
+    ratio-fit-line-color: "#0B486B"
+  legend:
+    position: [0.7, 0.6, 0.91, 0.91]
+  groups:
+    wjets:
+      legend: "W+jets"
+      fill-color: "#de5a6a"
+      order: 5
+    diboson:
+      legend: "Diboson"
+      fill-color: "#c38a91"
+      order: 2
+    zjets:
+      legend: "Z+jets"
+      fill-color: "#f8ce68"
+      order: 4
+    singletop:
+      legend: "Single top"
+      fill-color: "#d0f0c1"
+      order: 1
+  plotdefaults:
+    y-axis: Events
+    log-y: both
+    y-axis-show-zero: True
+    save-extensions: [pdf, png]
+    show-ratio: False
+    sort-by-yields: False

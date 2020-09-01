@@ -1,0 +1,10 @@
+tree: Events
+eras:
+  'test':
+    luminosity: 1
+samples:
+  SingleMuon_test:
+    type: data
+    era: test
+    files : 
+      - root://eospublic.cern.ch//eos/root-eos/benchmark/Run2012B_SingleMu.root
