@@ -456,17 +456,21 @@ samples:
 plotIt:
   configuration:
     width: 800
-    height: 600
+    height: 700
+    margin-left: 0.17
+    margin-right: 0.03
+    margin-top: 0.05
+    margin-bottom: 0.12
     luminosity-label: '%1$.2f fb^{-1} (13 TeV)'
-    experiment: ATLAS Open Data
-    extra-label: bamboo example
+    experiment: ATLAS
+    extra-label: Open Data with bamboo
     error-fill-style: 3154
     error-fill-color: "#ee556270"
     ratio-fit-error-fill-style: 1001
     ratio-fit-error-fill-color: "#aa556270"
     ratio-fit-line-color: "#0B486B"
   legend:
-    position: [0.7, 0.6, 0.91, 0.91]
+    position: [0.7, 0.7, 0.99, 0.92]
   groups:
     wjets:
       legend: "W+jets"
@@ -484,6 +488,8 @@ plotIt:
       legend: "Single top"
       fill-color: "#d0f0c1"
       order: 1
+    data:
+      legend: "Data"
   plotdefaults:
     y-axis: Events
     log-y: both

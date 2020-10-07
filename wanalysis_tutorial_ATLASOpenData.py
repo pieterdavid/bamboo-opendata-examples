@@ -47,7 +47,8 @@ class WAnalysis(ATLASOutreachOpenDataHistoModule):
                 op.c_bool(False)
             )))
         metp4 = makePtEtaPhiEP4(tree.met.et, op.c_float(0.), tree.met.phi, tree.met.et)
-        plots.append(Plot.make1D("mt_w", (lep.p4+metp4).Mt()/1000., signalSel, EqBin(40, 60., 180.), title="m_{T,W}"))
+        plots.append(Plot.make1D("mt_w", (lep.p4+metp4).Mt()/1000., signalSel, EqBin(40, 60., 180.),
+            title="m_{T}^{W#rightarrow l#nu} (GeV)", plotopts={"log-y-axis-range": [25., 2.5e8]}))
 
         return plots
 

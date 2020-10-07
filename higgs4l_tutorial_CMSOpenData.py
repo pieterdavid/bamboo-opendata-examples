@@ -49,10 +49,10 @@ class Higgs4L(NanoAODHistoModule):
         def reco_4l(leptons, lName, baseSel):
             has4l = baseSel.refine(f"has4{lName}", cut=[op.rng_len(leptons) >= 4,
                 sum(leptons[i].charge for i in range(4)) == 0 ])
-            bestZ = op.rng_min_element_by(op.combine(leptons[:4], N=2,
+            bestZ = op.rng_min_element_by(op.combine(leptons, N=2,
                 pred=lambda l1,l2 : l1.charge != l2.charge),
                     lambda ll : op.abs(op.invariant_mass(ll[0].p4, ll[1].p4)-mZ))
-            otherLeptons = op.select(leptons[:4], partial(lambda l,oz=None : op.AND(l.idx != oz[0].idx, l.idx != oz[1].idx), oz=bestZ))
+            otherLeptons = op.select(leptons, partial(lambda l,oz=None : op.AND(l.idx != oz[0].idx, l.idx != oz[1].idx), oz=bestZ))[:2]
             return has4l, bestZ, otherLeptons
 
         ## Mixed category: take leading two for each (as in the other implementations
@@ -125,8 +125,8 @@ class Higgs4L(NanoAODHistoModule):
         prefix = sel4l.name[3:]
         plots = [
             Plot.make1D(f"{prefix}_Z1_l1PT", bestZ[0].pt, sel4l, EqBin(50, 0., 100.)),
-            Plot.make1D(f"{prefix}_Z1_l2PT", bestZ[0].pt, sel4l, EqBin(50, 0., 100.)),
+            Plot.make1D(f"{prefix}_Z1_l2PT", bestZ[1].pt, sel4l, EqBin(50, 0., 100.)),
             Plot.make1D(f"{prefix}_Z2_l1PT", otherZ[0].pt, sel4l, EqBin(50, 0., 100.)),
-            Plot.make1D(f"{prefix}_Z2_l2PT", otherZ[0].pt, sel4l, EqBin(50, 0., 100.)),
+            Plot.make1D(f"{prefix}_Z2_l2PT", otherZ[1].pt, sel4l, EqBin(50, 0., 100.)),
             ]
         return plots

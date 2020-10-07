@@ -7,7 +7,16 @@ These can be run directly on [Binder](https://mybinder.readthedocs.io/en/latest/
 Currently, the following examples are available:
 
 - CMS H->4l search, based on [the df103 tutorial](https://root.cern/doc/master/df103__NanoAODHiggsAnalysis_8C.html)
+  ```sh
+  bambooRun -m higgs4l_tutorial_CMSOpenData.py:Higgs4L higgs4l_tutorial_CMSOpenData.yml -o test_out/df103
+  ```
 - ATLAS W boson analysis, based on [the df105 tutorial](https://root.cern/doc/master/df105__WBosonAnalysis_8py.html)
+  ```sh
+  bambooRun -m wanalysis_tutorial_ATLASOpenData.py:WAnalysis wanalysis_tutorial_ATLASOpenData.yml -o test_out/df105
+  ```
 - the [IRIS-HEP analysis description language benchmarks](https://github.com/iris-hep/adl-benchmarks-index), also available in a [separate repository](https://github.com/pieterdavid/bamboo-adl-benchmarks)
+  ```sh
+  bambooRun -m adl_benchmarks.py:IRISHEP_ADLBenchmarks adl_benchmarks.yml -o test_out/adl_benchmarks
+  ```
 
 Some of these, especially of the ADL benchmarks, go through enough combinatorics to benefit from [implicit multithreading](https://doi.org/10.1088/1742-6596/898/7/072022) in [RDataFrame](https://root.cern/doc/master/classROOT_1_1RDataFrame.html) ([DOI 10.5281/zenodo.260230](https://doi.org/10.5281/zenodo.260230)); this can be enabled by passing `--threads N` (with `N` three or four).
