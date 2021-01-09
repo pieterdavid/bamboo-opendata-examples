@@ -7,28 +7,28 @@ samples:
     era: "2012"
     group: "data"
     files:
-      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod_skimmed/Run2012B_DoubleMuParked.root
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/Run2012B_DoubleMuParked.root
     run_range: [193833, 196531]
     certified_lumi_file: http://opendata.cern.ch/record/1002/files/Cert_190456-208686_8TeV_22Jan2013ReReco_Collisions12_JSON.txt
   DoubleMuParked_2012C:
     era: "2012"
     group: "data"
     files:
-      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod_skimmed/Run2012C_DoubleMuParked.root
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/Run2012C_DoubleMuParked.root
     run_range: [198022, 203742]
     certified_lumi_file: http://opendata.cern.ch/record/1002/files/Cert_190456-208686_8TeV_22Jan2013ReReco_Collisions12_JSON.txt
   DoubleElectron_2012B:
     era: "2012"
     group: "data"
     files:
-      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod_skimmed/Run2012B_DoubleElectron.root
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/Run2012B_DoubleElectron.root
     run_range: [193833, 196531]
     certified_lumi_file: http://opendata.cern.ch/record/1002/files/Cert_190456-208686_8TeV_22Jan2013ReReco_Collisions12_JSON.txt
   DoubleElectron_2012C:
     era: "2012"
     group: "data"
     files:
-      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod_skimmed/Run2012C_DoubleElectron.root
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/Run2012C_DoubleElectron.root
     run_range: [198022, 203742]
     certified_lumi_file: http://opendata.cern.ch/record/1002/files/Cert_190456-208686_8TeV_22Jan2013ReReco_Collisions12_JSON.txt
   SMHiggsToZZTo4l_2012:
@@ -36,7 +36,7 @@ samples:
     cross-section: 0.0065
     generated-events: 299973.0
     files:
-      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod_skimmed/SMHiggsToZZTo4L.root
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/SMHiggsToZZTo4L.root
     legend: "m_{H} = 125 GeV"
     fill-type: 0
     #fill-color: "#ff0000"
@@ -50,7 +50,7 @@ samples:
     generated-events: 1499064.0
     scale: 1.386
     files:
-      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod_skimmed/ZZTo4mu.root
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/ZZTo4mu.root
   ZZTo4e_2012:
     era: "2012"
     group: ZZ
@@ -58,7 +58,7 @@ samples:
     generated-events: 1499093.0
     scale: 1.386
     files:
-      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod_skimmed/ZZTo4e.root
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/ZZTo4e.root
   ZZTo2e2mu_2012:
     era: "2012"
     group: ZZ
@@ -66,7 +66,7 @@ samples:
     generated-events: 1497445.0
     scale: 1.386
     files:
-      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod_skimmed/ZZTo2e2mu.root
+      - root://eospublic.cern.ch//eos/root-eos/cms_opendata_2012_nanoaod/ZZTo2e2mu.root
 plotIt:
   configuration:
     width: 800

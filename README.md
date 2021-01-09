@@ -6,7 +6,11 @@ These can be run directly on [Binder](https://mybinder.readthedocs.io/en/latest/
 
 Currently, the following examples are available:
 
-- CMS H->4l search, based on [the df103 tutorial](https://root.cern/doc/master/df103__NanoAODHiggsAnalysis_8C.html)
+- CMS H->4l search, based on [the df103 tutorial](https://root.cern/doc/master/df103__NanoAODHiggsAnalysis_8C.html).
+  The [default](higgs4l_tutorial_CMSOpenData.yml) configuration file uses the skimmed (51MB) input data,
+  for performance testing the full (12GB) version
+  [`higgs4l_tutorial_CMSOpenData_full.yml`](higgs4l_tutorial_CMSOpenData_full.yml)
+  (if file access is fast enough multithreading, e.g. ``--threads 4``, works very nicely)
   ```sh
   bambooRun -m higgs4l_tutorial_CMSOpenData.py:Higgs4L higgs4l_tutorial_CMSOpenData.yml -o test_out/df103
   ```
