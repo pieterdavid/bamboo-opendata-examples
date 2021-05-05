@@ -90,6 +90,9 @@ plotIt:
       legend: ZZ
       fill-color: "#99ccff"
       order: 1
+    data:
+      legend: data
+      order: 2
   plotdefaults:
     y-axis: Events
     log-y: both
