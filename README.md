@@ -4,7 +4,7 @@
 
 These can be run directly on [Binder](https://mybinder.readthedocs.io/en/latest/) through the badge above, or installed locally (see the [documentation](https://cp3.irmp.ucl.ac.be/~pdavid/bamboo/install.html) for more details).
 
-In case the link above does not work, [this one]((https://mybinder.org/v2/gh/pieterdavid/bamboo-docker/master)) can be used to launch the session, where this repository can be cloned with ``https://github.com/pieterdavid/bamboo-opendata-examples.git``.
+In case the link above does not work, [this one](https://mybinder.org/v2/gh/pieterdavid/bamboo-docker/master) can be used to launch the session, where this repository can be cloned with ``git clone https://github.com/pieterdavid/bamboo-opendata-examples.git``.
 
 Currently, the following examples are available:
 
