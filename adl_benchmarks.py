@@ -45,7 +45,7 @@ class IRISHEP_ADLBenchmarks(NanoAODHistoModule):
         if 1 in examples:
             ## Example 1: Plot the missing ET of all events.
             plots.append(Plot.make1D("Ex1_MET",
-                tree.MET.sumet, noSel,
+                tree.MET.pt, noSel,
                 EqBin(100, 0., 2000.), title="MET (GeV)"))
 
         if 2 in examples:
@@ -66,7 +66,7 @@ class IRISHEP_ADLBenchmarks(NanoAODHistoModule):
             jets40 = op.select(tree.Jet, lambda j : j.pt > 40)
             hasTwoJets40 = noSel.refine("twoJets40", cut=(op.rng_len(jets40) >= 2))
             plots.append(Plot.make1D("Ex4_twoJets40_MET",
-                tree.MET.sumet, hasTwoJets40,
+                tree.MET.pt, hasTwoJets40,
                 EqBin(100, 0., 2000.), title="MET (GeV)"))
 
         if 5 in examples:
@@ -77,30 +77,32 @@ class IRISHEP_ADLBenchmarks(NanoAODHistoModule):
                 )))
             hasDiMuZ = noSel.refine("hasDiMuZ", cut=(op.rng_len(dimu_Z) > 0))
             plots.append(Plot.make1D("Ex5_dimuZ_MET",
-                tree.MET.sumet, hasDiMuZ,
+                tree.MET.pt, hasDiMuZ,
                 EqBin(100, 0., 2000.), title="MET (GeV)"))
 
         if 6 in examples:
             ## Example 6: Plot pT of the trijet system with the mass closest to 172.5 GeV in each event and plot the maximum b-tagging discriminant value among the jets in the triplet.
-            plots.append(Plot.make1D("Ex6_njets",
-                op.rng_len(tree.Jet), noSel,
-                EqBin(20, 0., 20.), title="Number of jets"))
             trijets = op.combine(tree.Jet, N=3)
-            plots.append(Plot.make1D("Ex6_ntrijets",
-                op.rng_len(trijets), noSel,
-                EqBin(100, 0., 1000.), title="Number of 3-jet combinations"))
             hadTop = op.rng_min_element_by(trijets,
                 fun=lambda comb: op.abs((comb[0].p4+comb[1].p4+comb[2].p4).M()-172.5))
+            hadTop_p4 = (hadTop[0].p4 + hadTop[1].p4 + hadTop[2].p4)
             hasTriJet = noSel.refine("hasTriJet", cut=(op.rng_len(trijets) > 0))
-            plots.append(Plot.make1D("Ex6_trijet_mass",
-                (hadTop[0].p4+hadTop[1].p4+hadTop[2].p4).M(), hasTriJet,
-                EqBin(100, 0., 250.), title="Trijet mass (GeV/c^{2})"))
             plots.append(Plot.make1D("Ex6_trijet_topPt",
-                (hadTop[0].p4+hadTop[1].p4+hadTop[2].p4).Pt(), hasTriJet,
-                EqBin(100, 0., 250.), title="Trijet p_{T} (GeV/c)"))
+                hadTop_p4.Pt(), hasTriJet,
+                EqBin(100, 15., 40.), title="Trijet p_{T} (GeV/c)"))
             plots.append(Plot.make1D("Ex6_trijet_maxbtag",
                 op.max(op.max(hadTop[0].btag, hadTop[1].btag), hadTop[2].btag), hasTriJet,
                 EqBin(100, 0., 1.), title="Trijet maximum b-tag"))
+            if verbose:
+                plots.append(Plot.make1D("Ex6_njets",
+                    op.rng_len(tree.Jet), noSel,
+                    EqBin(20, 0., 20.), title="Number of jets"))
+                plots.append(Plot.make1D("Ex6_ntrijets",
+                    op.rng_len(trijets), noSel,
+                    EqBin(100, 0., 1000.), title="Number of 3-jet combinations"))
+                plots.append(Plot.make1D("Ex6_trijet_mass",
+                    hadTop_p4.M(), hasTriJet,
+                    EqBin(100, 0., 250.), title="Trijet mass (GeV/c^{2})"))
 
         if 7 in examples:
             ## Example 7: Plot the sum of pT of jets with pT > 30 GeV that are not within 0.4 in ΔR of any lepton with pT > 10 GeV.
@@ -137,7 +139,7 @@ class IRISHEP_ADLBenchmarks(NanoAODHistoModule):
                         l3 = op.rng_max_element_by(tlCol, lambda l : l.pt)
                     mtPlot = Plot.make1D("Ex8_3lMT_{0}{0}{1}".format(dlNm,tlNm),
                         op.sqrt(2*l3.pt*tree.MET.pt*(1-op.cos(l3.phi-tree.MET.phi))), hasTriLep,
-                        EqBin(100, 0., 250.), title="M_{T} (GeV/c^2)")
+                        EqBin(100, 15., 250.), title="M_{T} (GeV/c^2)")
                     mt3lPlots.append(mtPlot)
                     plots.append(mtPlot)
             plots.append(SummedPlot("Ex8_3lMT", mt3lPlots))
